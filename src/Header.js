@@ -2,11 +2,13 @@ import React from "react";
 function Header() {
   return (
     <div className="Header">
-      <img
-        className="Logo"
-        src="https://image.flaticon.com/icons/svg/139/139899.svg"
-      />
-      <header className="App-header">CYF Hotel</header>
+      <header className="App-header">
+        <h3>CFY HOTEL</h3>
+        <img
+          className="Logo"
+          src="https://image.flaticon.com/icons/svg/139/139899.svg"
+        />
+      </header>
     </div>
   );
 }

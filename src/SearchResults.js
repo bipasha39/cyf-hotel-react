@@ -4,8 +4,8 @@ import FakeBookings from "./data/fakeBookings.json";
 
 let SearchResults = () => {
   return (
-    <table className="table">
-      <thead>
+    <table className="table table-striped">
+      <thead className="thead-dark">
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Title</th>
