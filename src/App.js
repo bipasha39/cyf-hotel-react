@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Touristinfocards from "./Touristinfocards";
 import Bookings from "./Bookings";
+import Restaurant from "./Restaurant";
 import Footer from "./Footer";
 import "./App.css";
 
@@ -9,8 +10,9 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Bookings />
       <Touristinfocards />
+      <Bookings />
+      <Restaurant />
 
       <Footer
         Contactinfo={[

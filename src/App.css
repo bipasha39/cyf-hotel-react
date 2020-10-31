@@ -7,8 +7,9 @@
   height: 80px;
 }
 .Logo {
-  width: 60px;
-  height: 60px;
+  width: auto;
+  height: 40px;
+  text-align: center;
 }
 
 .touristCard {
@@ -18,18 +19,40 @@
   align-items: center;
   align-content: center;
 }
+.highlight {
+  transition: ease-in;
+}
+.highlight:hover {
+  background-color: lightgray;
+  color: darkred;
+  font-weight: 400;
+  transform: scale(1.2);
+}
+.Restaurant-Order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .ul {
   list-style-type: none;
 }
 .App-header {
+  display: flex;
+  justify-content: center;
   background-color: #222;
-  height: 50px;
+  height: 60px;
   padding: 20px;
   color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
+}
+.tablebottom {
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .App-title {
@@ -64,6 +87,7 @@ tr {
 .footer {
   padding-top: 20px;
   text-align: center;
+  background: rgba(255, 166, 0, 0.164);
 }
 
 .card {
