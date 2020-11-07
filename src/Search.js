@@ -9,6 +9,11 @@ const Search = props => {
     setSearchInput(eventValue);
     console.log(eventValue);
   }
+  //number 18 function
+  function handlesubmit(event) {
+    event.preventDefault();
+    console.log(props.search(searchInput));
+  }
 
   //instruction 18 in <form>//
   return (
@@ -18,7 +23,7 @@ const Search = props => {
       </div>
       <div className="row search-wrapper">
         <div className="col">
-          <form className="form-group search-box" onSubmit={props.search}>
+          <form className="form-group search-box" onSubmit={handlesubmit}>
             <label htmlFor="customerName">Customer name</label>
             <div className="search-row">
               <input

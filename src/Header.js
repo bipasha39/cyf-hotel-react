@@ -7,6 +7,7 @@ function Header() {
         <img
           className="Logo"
           src="https://image.flaticon.com/icons/svg/139/139899.svg"
+          alt="logo"
         />
       </header>
     </div>

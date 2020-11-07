@@ -4,7 +4,8 @@ const TouristInfoCards = () => {
     <div className="touristCard">
       <div className="card">
         <img
-          src="https://www.publicsectorexecutive.com/write/MediaUploads/57_c._MarioGuti.jpg"
+          src="https://www.publicsectorexecutive.com/write/MediaUploads/57_c._MarioGuti.jpg "
+          alt="glasgow"
           className="card-img-top"
         />
         <div className="card-body">
@@ -20,6 +21,7 @@ const TouristInfoCards = () => {
       <div className="card">
         <img
           src="https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz"
+          alt="London city"
           className="card-img-top"
         />
         <div className="card-body">
@@ -35,6 +37,7 @@ const TouristInfoCards = () => {
       <div className="card">
         <img
           src="https://media.timeout.com/images/105237972/image.jpg"
+          alt="Manchester"
           className="card-img-top"
         />
         <div className="card-body">
