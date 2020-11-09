@@ -12,7 +12,7 @@ const Search = props => {
   //number 18 function
   function handlesubmit(event) {
     event.preventDefault();
-    console.log(props.search(searchInput));
+    props.search(searchInput);
   }
 
   //instruction 18 in <form>//

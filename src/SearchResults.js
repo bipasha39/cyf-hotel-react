@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 import moment from "moment";
+import CustomerProfile from "./CustomerProfile";
 
 let SearchResults = props => {
+  console.log(props.results);
   const [color, setColor] = useState(false);
+  const [id, setId] = useState("");
 
   const colorhandler = () => {
     if (!color) {
       setColor(true);
     } else setColor(false);
   };
+
+  // instruction 20//
+  function buttonClick(id) {
+    setId(id);
+  }
+
   return (
     <div>
       <table className="table table-striped">
@@ -44,12 +53,19 @@ let SearchResults = props => {
                 <td>{booking.checkInDate}</td>
                 <td>{booking.checkOutDate}</td>
                 <td>{checkOut.diff(checkIn, "days")}</td>
+                <td>
+                  <button onClick={() => buttonClick(booking.id)}>
+                    Show Profile
+                  </button>
+                </td>
+                {/* { instruction 19 was done in button} */}
                 {/* <td>{booking.checkInDate.diff(booking.checkOutDate, "days")}</td> */}
               </tr>
             );
           })}
         </tbody>
       </table>
+      <CustomerProfile id={id} />
       <h6 className="tablebottom">CYF 2017</h6>
     </div>
   );

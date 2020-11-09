@@ -5,8 +5,15 @@ import SearchResults from "./SearchResults.js";
 
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
+
+  //instruction 19//
+
   const search = searchVal => {
-    console.info("TO DO!", searchVal);
+    const filteredBooking = bookings.filter(
+      booking =>
+        booking.firstName === searchVal || booking.surName === searchVal
+    );
+    setBookings(filteredBooking);
   };
 
   //instruction 16///
