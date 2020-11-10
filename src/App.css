@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+  background: #daded4;
 }
 
 .App-logo {
@@ -34,9 +35,13 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: #9dc88d;
 }
 .ul {
   list-style-type: none;
+}
+.customer-profile {
+  background-color: #a3bcb6;
 }
 .App-header {
   display: flex;
@@ -87,7 +92,7 @@ tr {
 .footer {
   padding-top: 20px;
   text-align: center;
-  background: rgba(255, 166, 0, 0.164);
+  background: #ffffff;
 }
 
 .card {

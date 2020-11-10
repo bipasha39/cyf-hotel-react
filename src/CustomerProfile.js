@@ -16,15 +16,15 @@ function CustomerProfile(props) {
 
   console.log(user);
   return (
-    <div>
+    <div className="customer-profile">
       <p>Customer {props.id} Profile</p>
       <p>
-        <span>PhoneNumber</span>
+        <span>PhoneNumber:</span>
         {user.phoneNumber}
       </p>
       <p>
         {" "}
-        <span>Email </span>
+        <span>Email: </span>
         {user.vip ? user.email : null}
       </p>
     </div>
