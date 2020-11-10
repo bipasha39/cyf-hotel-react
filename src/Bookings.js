@@ -5,6 +5,7 @@ import SearchResults from "./SearchResults.js";
 
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   //instruction 19//
 
@@ -18,21 +19,30 @@ const Bookings = () => {
 
   //instruction 16///
   useEffect(() => {
-    console.log("Fetching data from cyf hotel");
-
-    fetch(`https://cyf-react.glitch.me`)
+    fetch(`https://cyf-react.glitch.me/delayed`)
       .then(res => res.json())
       .then(data => {
         setBookings(data);
+        setLoading(false);
       });
   }, []);
 
   return (
     <div className="App-content">
-      <div className="container">
-        <Search search={search} />
-        <SearchResults results={bookings} />
-      </div>
+      {/*this is for 23 error instruction*/}
+      {bookings ? (
+        <div className="container">
+          <Search search={search} />
+          {/*this is for 22 delayed instruction*/}
+          {!loading ? (
+            <SearchResults results={bookings} />
+          ) : (
+            <span>Loading...</span>
+          )}
+        </div>
+      ) : (
+        <span>error...</span>
+      )}
     </div>
   );
 };

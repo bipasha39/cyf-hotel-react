@@ -32,6 +32,7 @@ let SearchResults = props => {
             <th scope="col">Check in Date</th>
             <th scope="col">Check out date</th>
             <th scope="col">Number of Nights</th>
+            <th scope="col">Customer Profile</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +43,7 @@ let SearchResults = props => {
               <tr
                 key={i}
                 className={color ? "highlight" : null}
-                onClick={colorhandler}
+                // onClick={colorhandler}
               >
                 <th scope="row">{booking.id}</th>
                 <td>{booking.title}</td>
